@@ -1,30 +1,29 @@
 <?xml version="1.0"?>
 <preface xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="intro">
   <info>
-    <title>Introduction</title>
+    <title>Вступление</title>
   </info>
   <section xml:id="welcome">
     <info>
-      <title>Welcome</title>
+      <title>Добро пожаловать!</title>
     </info>
-    <para>Welcome to Computer Science from the Bottom Up</para>
+    <para>Добро пожаловать в Computer Science from the Bottom Up</para>
     <section>
       <info>
-        <title>Philosophy</title>
+        <title>Философия</title>
       </info>
-      <para>In a nutshell, what you are reading is intended to be a
-      shop class for computer science.  Young computer science
-      students are taught to "drive" the computer; but where do you go
-      to learn what is under the hood?  Trying to understand the
-      operating system is unfortunately not as easy as just opening
-      the bonnet.  The current Linux kernel runs into the millions of
-      lines of code, add to that the other critical parts of a modern
-      operating system (the compiler, assembler and system libraries)
-      and your code base becomes unimaginable.  Further still, add a
-      University level operating systems course (or four), some good
-      reference manuals, two or three years of C experience and, just
-      maybe, you might be able to figure out where to <emphasis>start
-      looking</emphasis> to make sense of it all.
+      <para>Вкратце, то, что вы читаете предназначено для **shop**-класс
+      Computer Science. Молодые студенты в Computer Science умеют управлять
+      компьютером, но с чего им начать, чтобы узнать что скрыто "под
+      капотом"? Попытка понять операционную систему, к сожалению, 
+      не так проста как открытие капота. На данный момент ядро Linux
+      состоит из миллионов строк кода, добавьте к этому другие критические 
+      части современное операционной системы, такие как компилятор, ассемблер,
+      системные библиотеки и ваш код уже трудно представить. Добавьте к этому
+      университетский курс предмета операционных систем, несколько хороших
+      справочных руководств, два или три года опыта с языком С и, 
+      может только тогда, вы лишь <emphasis>немного приблизитесь</emphasis>
+      к тому, чтобы понять что к чему.
       </para>
       <para>To keep with the car analogy, the prospective student is
       starting out trying to work on a Formula One engine without ever
