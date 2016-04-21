@@ -1,35 +1,35 @@
 #include <stdio.h>
 
-/* The API to implement */
+/* API, подлежащий реализации */
 struct greet_api
 {
 	int (*say_hello)(char *name);
 	int (*say_goodbye)(void);
 };
 
-/* Our implementation of the hello function */
+/* Наша реализация функции hello */
 int say_hello_fn(char *name)
 {
 	printf("Hello %s\n", name);
 	return 0;
 }
 
-/* Our implementation of the goodbye function */
+/* Наша реализация функции goodbye */
 int say_goodbye_fn(void)
 {
 	printf("Goodbye\n");
 	return 0;
 }
 
-/* A struct implementing the API */
+/* Структура данных, реализующая API */
 struct greet_api greet_api =
 {
 	.say_hello = say_hello_fn,
 	.say_goodbye = say_goodbye_fn
 };
 
-/* main() doesn't need to know anything about how the
- * say_hello/goodbye works, it just knows that it does */
+/* main() не нужно знать ничего о том, как функции say_hello/goodbye реализованы,
+ * main() просто знает, что они делают */
 int main(int argc, char *argv[])
 {
 	greet_api.say_hello(argv[1]);

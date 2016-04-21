@@ -93,14 +93,14 @@
     </info>
     <para>В общем случае, абстракции реализованы тем, что называется
         <emphasis>Прикладным Интерфейсом Программирования</emphasis> (API). 
-        API - это расплывчатый термин, обозначающий множество различных вещей в разных
-        контекстах программирования. Fundamentally, a programmer designs a set of functions
-    and documents their interface and functionality with the principle
-    that the actual implementation providing the API is opaque.</para>
-    <para>For example, many large web-applications provide an API
-      accessible via HTTP.  Accessing data via this method surely
-      triggers many complicated series of remote-procedure calls,
-      database queries and data transfer; all of which is opaque to
+        API - это расплывчатый термин в программировании, обозначающий
+        различные вещи в зависимости от контекста. Вкратце, программист
+        проектирует набор функций и документирует их интерфейс и функционал, учитывая,
+        что реализация API является черным ящиком.</para>
+    <para>Например, много больших веб-сервисом предоставляют API, доступный через HTTP.
+        Доступ к данным используя данный метод вызывает множество сложных серий вызовов
+        удаленных процедур (RPC), запросов к базам данных и передач данных; каждая из
+        all of which is opaque to
       the end user who simply receives the contracted data.</para>
     <para>Those familiar with <emphasis>object-oriented</emphasis>
       languages such as Java, Python or C++ would be familiar with the
