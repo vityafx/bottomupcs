@@ -1,77 +1,75 @@
 <?xml version="1.0"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:id="chapter00">
   <info>
-    <title>General Unix and Advanced C</title>
+    <title>Общий Unix и современный C</title>
   </info>
   <section xml:id="everything_is_a_file">
     <info>
       <title>
-        <emphasis>Everything is a file!</emphasis>
+        <emphasis>Все есть файл!</emphasis>
       </title>
     </info>
-    <para>An often quoted tenet of UNIX-like systems such as Linux or
-    BSD is <emphasis>everything is a file</emphasis>.</para>
-    <para>Imagine a file in the context something familiar like a word
-    processor.  There are two fundamental operations we could use on
-    this imaginary word processing file:</para>
+    <para>Часто цитируемая доктрина UNIX-похожих систем, таких как Linux или BSD
+    это <emphasis>все есть файл</emphasis>.</para>
+    <para>Представьте, что файл это слово в текстовом процессоре (Microsoft Word).
+    В данном случае нам доступны две базовых операции, которые мы можем выполнить
+    с таким файлом:</para>
     <orderedlist>
       <listitem>
-        <para>Read it (existing saved data from the word processor).</para>
+        <para>Чтение (текст, который мы видим в текстовом процессоре).</para>
       </listitem>
       <listitem>
-        <para>Write to it (new data from the user).</para>
+        <para>Запись (новая информация от пользователя).</para>
       </listitem>
     </orderedlist>
-    <para>Consider some of the common things attached to a computer
-    and how they relate to our fundamental file operations:</para>
+    <para>Давайте представим несколько устройств, подключенных к компьютеру,
+    и выясним, как к ним относятся базовые файловые операции:</para>
     <orderedlist>
       <listitem>
-        <para>The screen</para>
+        <para>Экран</para>
       </listitem>
       <listitem>
-        <para>The keyboard</para>
+        <para>Клавиатура</para>
       </listitem>
       <listitem>
-        <para>A printer</para>
+        <para>Принтер</para>
       </listitem>
       <listitem>
-        <para>A CDROM</para>
+        <para>Дисковод CDROM</para>
       </listitem>
     </orderedlist>
-    <para>The screen and printer are both like a write-only file, but
-    instead of being stored as bits on a disk the information is
-    displayed as dots on a screen or lines on a page. The keyboard is
-    like a read only file, with the data coming from keystrokes
-    provided by the user.  The CDROM is similar, but rather than
+    <para>Экран и принтер являются файлами, поддерживающими только операции записи,
+    но вместо того, чтобы быть сохраненными на диске как последовательность битов,
+    информация отображается точками на экране или линиями на странице. Клавиатура
+    это файл, поддерживающий только операцию чтения, информация в который поступает
+    с нажатием клавиш пользователем. The CDROM is similar, but rather than
     randomly coming from the user the data is stored directly on the
     disk.</para>
-    <para>Thus the concept of a file is a good
-    <emphasis>abstraction</emphasis> of either a a sink for, or source
-    of, data.  As such it is an excellent abstraction of all the
-    devices one might attach to the computer.  This realisation is the
-    great power of UNIX and is evident across the design of the entire
-    platform.  It is one of the fundamental roles of the operating
-    system to provide this abstraction of the hardware to the
-    programmer.</para>
+    <para>Концепция "все есть файл" - это хорошая
+    <emphasis>абстракция</emphasis> источника и приемника данных.
+    Кроме того, это отличная абстракция для всех устройств, которые могут быть подключены
+    к компьютеру. Понимание великой мощи UNIX помогает понять всю платформу целиком.
+    Предоставление абстракций "железа" программисту является одной из основных целей ОС.
+    </para>
     <para>It is probably not too much of a stretch to say abstraction
     is <emphasis>the</emphasis> primary concept that underpins all
-    modern computing.  No one person can understand everything from
-    designing a modern user-interface to the internal workings of a
-    modern CPU, much less build it all themselves.  To programmers,
-    abstractions are the <emphasis>lingua franca</emphasis> that
-    allows us to collaborate and invent.</para>
-    <para>Learning to navigate across abstractions gives one greater
-      insight into how to <emphasis>use</emphasis> the abstractions in
-      the best and most innovative ways.  In this book, we are
-      concerned with abstractions at the lowest layers; between
-      applications and the operating-system and the operating-system
-      and hardware.  Above this lies many more layers, each worthy of
-      their own books.  As these chapters progress, you will hopefully
-      gain some insight into the abstractions presented by a modern
-      operating-system.</para>
+    modern computing. Не каждый человек может знать все, начиная om
+    построения современного пользовательского интерфейса и заканчивая
+    внутренним устройством центрального процессора, еще меньше умеют
+    делать это все сами. Для программистов, абстракция являются
+    <emphasis>lingua franca</emphasis>, который позволяет нам изобретать.
+    </para>
+    <para>Осознание абстракций дает важное понимание того, как
+        <emphasis>использовать</emphasis> их наиболее правильно.
+        В этой книге мы затрагиваем абстракции на низком уровне: между
+        программами и операционной системой и между операционной системой
+        и "железом". Выше находятся другие уровни абстракции, каждая из
+        которых заслуживает отдельной книги. По мере чтения книги Вы, мы надеемся,
+        начнете вникать в то, как абстракции представлены современной ОС.
+      </para>
     <figure>
       <info>
-        <title>Abstraction</title>
+        <title>Абстракция</title>
       </info>
       <mediaobject>
         <imageobject>
@@ -84,20 +82,19 @@
           <imagedata fileref="chapter00/figures/abstraction.png" format="PNG"/>
         </imageobject>
         <textobject>
-          <phrase>Can you spot the difference between a CDROM and a keyboard?  As an application programmer, you should not be able to.</phrase>
+          <phrase>Можете ли вы увидеть разницу между CDROM и клавиатурой? Как прикладной разработчик, вы не должны.</phrase>
         </textobject>
       </mediaobject>
     </figure>
   </section>
   <section xml:id="abstration">
     <info>
-      <title>Implementing abstraction</title>
+      <title>Реализация абстракций</title>
     </info>
-    <para>In general, abstraction is implemented by what is
-    generically termed an <emphasis>Application Programming
-    Interface</emphasis> (API).  API is a somewhat nebulous term that
-    means different things in the context of various programming
-    endavours.  Fundamentally, a programmer designs a set of functions
+    <para>В общем случае, абстракции реализованы тем, что называется
+        <emphasis>Прикладным Интерфейсом Программирования</emphasis> (API). 
+        API - это расплывчатый термин, обозначающий множество различных вещей в разных
+        контекстах программирования. Fundamentally, a programmer designs a set of functions
     and documents their interface and functionality with the principle
     that the actual implementation providing the API is opaque.</para>
     <para>For example, many large web-applications provide an API

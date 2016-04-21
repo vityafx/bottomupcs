@@ -25,32 +25,31 @@
       может только тогда, вы лишь <emphasis>немного приблизитесь</emphasis>
       к тому, чтобы понять что к чему.
       </para>
-      <para>To keep with the car analogy, the prospective student is
-      starting out trying to work on a Formula One engine without ever
-      knowing how a two stroke motor operates.  During their shop
-      class the student should pull apart, twist, turn and put back
+      <para>Продолжая аналогию с машиной (и капотом), перспективный студент
+          начинает предпринимать попытки к работе над двигателем болида Формулы 1
+          без каких-либо знаний как двухтактный мотор работает вообще.
+        During their shop class the student should pull apart, twist, turn and put back
       together that two stroke motor, and consequentially have a pretty
       good framework for understanding just how the Formula One engine
-      works.  Nobody will expect them to be a Formula One engineer,
+      works. Никто не будет ожидать от него, что он станет инженером Формулы 1,
       but they are well on their way!</para>
     </section>
     <section>
       <info>
-        <title>Why <emphasis>from the bottom up</emphasis>?</title>
+        <title>Почему <emphasis>снизу-вверх</emphasis>?</title>
       </info>
-      <para>Not everyone wants to attend shop class.  Most people only
-      want to drive the car, not know how to build one from scratch.
-      Obviously any general computing curriculum has to take this into
-      account else it won't be relevant to its students.  So computer
-      science is taught from the "top down"; applications, high level
-      programming, software design and development theory, possibly
-      data structures.  Students will probably be exposed to binary,
-      hopefully binary logic, possibly even some low level concepts
-      such as registers, opcodes and the like at a superficial
-      level.</para>
-      <para>This book aims to move in completely the opposite
-      direction, working from operating systems fundamentals through
-      to how those applications are complied and executed.  </para>
+      <para>Не каждый хочет поступить в shop class. Большинство людей
+      хотят только водить машину, а не знать как собрать оную с нуля.
+      Очевидно, что любая вычислительная программа должна учитывать этот
+      факт, иначе она не будет иметь значеия для студентов. Поэтому науке
+      Computer Science учат "сверху-вниз"; приложения, высоко-уровневое
+      программирование, дизайн ПО, возможно, структуры данных. Студентов,
+      возможно, будут учить математической логике (двоичной логике), может быть
+      даже таким низко-уровневым вещам, как регистры и коды операций и тому подобным
+      на поверхностном уровне. </para>
+      <para>Эта книга предлагает диаметрально-противоположный подход,
+          начиная с основ операционных систем до того, как программы компилируются
+          и запускаются. </para>
     </section>
     <section>
       <info>
