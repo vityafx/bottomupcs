@@ -1,5 +1,14 @@
 Computer Science from the Bottom Up
 -----------------------------------
+Это перевод оригинальной книги "Computer Science from the Bottom Up",
+доступной по адресу http://bottomupcs.com/
+
+Переводчики:
+
+* (Victor Polevoy)[3]
+
+Computer Science from the Bottom Up
+-----------------------------------
 
 You should be able to make the course materials by typing
 
@@ -36,3 +45,4 @@ Notes
 
 [1] https://svn.apache.org/repos/asf/xmlgraphics/fop/trunk/lib/batik-all-svn-trunk.jar
 [2] https://issues.apache.org/jira/browse/FOP-2489
+[3] https://github.com/vityafx
