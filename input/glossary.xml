@@ -2,7 +2,7 @@
 <!-- Converted by db4-upgrade version 1.0 -->
 <glossary xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="glossary">
   <info>
-    <title>Glossary</title>
+    <title>Глоссарий</title>
   </info>
   <!-- glossary -->
   <glossdiv>
@@ -13,7 +13,7 @@
       <glossterm>Application Programming Interface</glossterm>
       <acronym>API</acronym>
       <glossdef>
-        <para>The set of variables and functions used to communicate between different parts of programs.</para>
+        <para>Множество переменных и функций, используемых для общения между различными частями программ.</para>
         <glossseealso otherterm="ABI"/>
       </glossdef>
     </glossentry>
@@ -21,7 +21,7 @@
       <glossterm>Application Binary Interface</glossterm>
       <acronym>ABI</acronym>
       <glossdef>
-        <para>A technical description of how the operating system should interface with hardware.</para>
+        <para>Техническое описание того, как операционная систем должна взаимодействовать с "железом".</para>
         <glossseealso otherterm="API"/>
       </glossdef>
     </glossentry>
@@ -34,7 +34,7 @@
       <glossterm>Extensible Markup Language</glossterm>
       <acronym>XML</acronym>
       <glossdef>
-        <para>Some reasonable definition here.</para>
+        <para>Расширяемый язык разметки.</para>
         <glossseealso otherterm="sgml"/>
       </glossdef>
     </glossentry>
@@ -42,7 +42,7 @@
       <glossterm>Standardised Generalised Markup Language</glossterm>
       <acronym>SGML</acronym>
       <glossdef>
-        <para>The grand daddy of all documents</para>
+        <para>Прародитель всех офисных документов<./para>
         <glossseealso otherterm="xml"/>
       </glossdef>
     </glossentry>
@@ -54,16 +54,16 @@
     <glossentry xml:id="mutuallyexclusive">
       <glossterm>Mutually Exclusive</glossterm>
       <glossdef>
-        <para>When a number of things are mutually exclusive, only
-	  one can be valid at a time.  The fact that one of the things
-	  is valid makes the others invalid. </para>
+        <para>Взаимное исключение. Говорят, что любимая пара вещей являются взаимно исключенными
+        только когда одна из них является не-исключенной в любой момент времени.
+        Если одна из этой пары вещей становить исключенной, другая становится не-исключенной, и наоборот.</para>
       </glossdef>
     </glossentry>
     <glossentry>
       <glossterm>MMU</glossterm>
       <glossdef>
-        <para>The <emphasis>memory managment unit</emphasis>
-	  component of the hardware architecture.</para>
+        <para><emphasis>Блок управления памятью</emphasis> - компонент аппаратной архитектуры компьютера.
+	</para>
       </glossdef>
     </glossentry>
   </glossdiv>
@@ -74,9 +74,9 @@
     <glossentry xml:id="opensource">
       <glossterm>Open Source</glossterm>
       <glossdef>
-        <para>Software
-      distributed in source form under licenses guaranteeing anybody
-      rights to freely use, modify, and redistribute the code.</para>
+        <para>Программное обеспечение, распространяющееся по данной модели
+        предоставляется в виде исходного кода, под лицензией, гарантирующей каждому человеку
+        права свободно использовать, модифицировать и перераспространять исходный код.</para>
       </glossdef>
     </glossentry>
   </glossdiv>
@@ -87,7 +87,7 @@
     <glossentry xml:id="shell">
       <glossterm>Shell</glossterm>
       <glossdef>
-        <para>The interface used to interact with the operating system.</para>
+        <para>Интерфейс взаимодействия с операционной системой.</para>
       </glossdef>
     </glossentry>
   </glossdiv>
